@@ -1,0 +1,1851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Manohar Jammula | PhD Research Scholar | IIT Dharwad</title>
+
+<!--
+  ============================================================
+  HOW TO EDIT THIS PAGE
+  ============================================================
+  This site works like a small app: clicking a menu item shows
+  ONE page at a time (Home / Research / Publications / Gallery /
+  Contact) — nothing is scrolled, each is a separate screen.
+
+  Each page is a <section id="page-..." class="page"> block.
+  Find the page you want to change and edit the text inside it.
+  Search for "EDIT:" comments to jump straight to editable spots.
+
+    1. Home        -> id="page-home"
+    2. Research     -> id="page-research"
+    3. Publications -> id="page-publications"
+    4. Gallery      -> id="page-gallery"
+    5. Contact      -> id="page-contact"
+
+  To add a new publication, gallery image, or highlight card,
+  copy one existing "card" block (from its opening <div ...> to
+  its closing </div>) and paste a duplicate right below it, then
+  edit the text inside.
+
+  To swap an image, replace the URL inside src="..." with a link
+  to your own image, or upload the image next to this file and
+  use its filename, e.g. src="my-photo.jpg".
+  ============================================================
+-->
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
+<!-- Cooper Hewitt (open-source typeface, not on Google Fonts) — used for Research card titles -->
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/cooper-hewitt@5.2.5/600.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/cooper-hewitt@5.2.5/700.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#dfe3e7",
+                        "primary-container": "#b3181d",
+                        "inverse-primary": "#94ccff",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#4a4a4a",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#13807a",
+                        "background": "#ffffff",
+                        "surface-tint": "#006399",
+                        "primary-fixed-dim": "#94ccff",
+                        "secondary-fixed": "#85f8c4",
+                        "surface-container-high": "#e4e9ed",
+                        "on-background": "#171c1f",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#eaeef2",
+                        "tertiary-fixed": "#d8e2ff",
+                        "link-hover": "#0e5f5a",
+                        "on-secondary-container": "#00714e",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#004b74",
+                        "secondary-fixed-dim": "#68dba9",
+                        "surface-bright": "#ffffff",
+                        "on-secondary-fixed-variant": "#005137",
+                        "on-tertiary-fixed-variant": "#3b4760",
+                        "on-error": "#ffffff",
+                        "outline": "#707881",
+                        "surface-variant": "#e3e3e3",
+                        "on-tertiary-fixed": "#0f1b32",
+                        "primary-fixed": "#cde5ff",
+                        "on-primary-container": "#cbe4ff",
+                        "tertiary-container": "#58647f",
+                        "tertiary": "#404c66",
+                        "on-primary-fixed": "#001d32",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#ffffff",
+                        "slate-text": "#334155",
+                        "primary": "#1a1a1a",
+                        "on-tertiary-container": "#d7e1ff",
+                        "on-secondary-fixed": "#002114",
+                        "surface-dim": "#d6dade",
+                        "inverse-on-surface": "#edf1f5",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#2c3134",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#82f5c1",
+                        "outline-variant": "#c0c7d1",
+                        "research-highlight": "#e3f4f2",
+                        "on-surface": "#171c1f",
+                        "surface-container-low": "#f4f4f4",
+                        "tertiary-fixed-dim": "#bac6e5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.25rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "80px",
+                        "margin-mobile": "16px",
+                        "card-padding": "24px",
+                        "container-max-width": "1200px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Oswald"],
+                        "headline-lg": ["Oswald"],
+                        "body-lg": ["Source Serif 4", "serif"],
+                        "headline-md": ["Oswald"],
+                        "body-sm": ["Source Serif 4", "serif"],
+                        "body-md": ["Source Serif 4", "serif"],
+                        "label-mono": ["JetBrains Mono"],
+                        "headline-xl-mobile": ["Oswald"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["30px", {"lineHeight": "38px", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["22px", {"lineHeight": "30px", "fontWeight": "500"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-mono": ["13px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-xl-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+          font-variation-settings: 'FILL' 1;
+        }
+        .card-hover-effect {
+            transition: all 0.3s ease;
+        }
+        .card-hover-effect:hover {
+            box-shadow: 0 10px 30px -10px rgba(0, 80, 125, 0.1);
+            transform: translateY(-2px);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .gallery-img {
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+        /* Page switching: only the active page is shown */
+        .page { display: none; }
+        .page.active { display: block; }
+        .mobile-nav { display: none; }
+        .mobile-nav.open { display: flex; }
+        /* ---- Lab-site look: red menu bar, Oswald caps headings, boxed cards ---- */
+        body { font-weight: 400; }
+        .font-headline-xl, .font-headline-lg, .font-headline-md {
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        /* Page / section titles get a short red rule underneath */
+        .page > h2.font-headline-lg,
+        .section-title {
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .page > h2.font-headline-lg::after,
+        .section-title::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 56px;
+            height: 3px;
+            background: #e21c21;
+        }
+        .page > h2.font-headline-lg { margin-bottom: 1.25rem; }
+        /* Boxes: square-ish corners with a soft drop shadow */
+        .bg-surface-container-lowest.border {
+            border-color: #e6e6e6;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+        }
+        .card-hover-effect:hover {
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18) !important;
+        }
+        .lab-menu {
+            background: #e21c21;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+        }
+        .nav-link {
+            position: relative;
+            font-family: 'Oswald', sans-serif;
+            font-size: 17px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #ffffff;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+        .nav-link:hover,
+        .nav-link.active-link {
+            background: #ffffff;
+            color: #e21c21;
+        }
+        .news-date {
+            color: #ff3333;
+            font-weight: 700;
+            font-family: 'Source Serif 4', serif;
+        }
+        .material-symbols-outlined.text-primary { color: #13807a; }
+        .bg-primary\/10 { background-color: rgba(19, 128, 122, 0.1); }
+        .lab-footer { background: #0e3b39; color: #d5ebe8; border-top: 4px solid #e21c21; }
+        .lab-footer a, .lab-footer button { color: #d5ebe8; }
+        .lab-footer a:hover, .lab-footer button:hover { color: #ffffff; }
+        /* Publications > scrolling journal-cover strip (moves left → right) */
+        .cover-marquee {
+            position: relative;
+            overflow: hidden;
+            padding: 18px 0 8px;
+            background: #f4f4f4;
+            border-top: 3px solid #e21c21;
+            border-bottom: 3px solid #13807a;
+            -webkit-mask-image: linear-gradient(to right, transparent 0, #000 6%, #000 94%, transparent 100%);
+                    mask-image: linear-gradient(to right, transparent 0, #000 6%, #000 94%, transparent 100%);
+        }
+        .cover-track {
+            display: flex;
+            width: max-content;
+            animation: coverScroll var(--cover-duration, 40s) linear infinite;
+        }
+        .cover-marquee:hover .cover-track { animation-play-state: paused; }
+        @keyframes coverScroll {
+            from { transform: translateX(-50%); }
+            to   { transform: translateX(0); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .cover-track { animation: none; }
+            .cover-marquee { overflow-x: auto; }
+        }
+        .cover-set { display: flex; gap: 28px; padding-right: 28px; }
+        .cover-card {
+            width: 180px;
+            flex-shrink: 0;
+            text-decoration: none;
+            transition: transform 0.25s ease;
+        }
+        .cover-card:hover { transform: translateY(-6px); }
+        .cover {
+            position: relative;
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+            color: #ffffff;
+            background: linear-gradient(160deg, var(--c1) 0%, var(--c2) 100%);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+        }
+        .cover-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 3;
+        }
+        .cover-head {
+            position: relative;
+            z-index: 2;
+            padding: 12px 12px 10px;
+            background: rgba(0, 0, 0, 0.22);
+        }
+        .cover-pub {
+            display: block;
+            font-family: 'Source Serif 4', serif;
+            font-size: 10px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 4px;
+        }
+        .cover-journal {
+            display: block;
+            font-family: 'Oswald', sans-serif;
+            font-size: 17px;
+            line-height: 1.15;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+        /* abstract "droplet" artwork on placeholder covers */
+        .cover-art { position: absolute; inset: 0; z-index: 1; }
+        .cover-art i {
+            position: absolute;
+            border-radius: 9999px;
+            border: 2px solid rgba(255, 255, 255, 0.55);
+            background: radial-gradient(circle at 35% 35%, rgba(255,255,255,0.35), rgba(255,255,255,0.05) 60%);
+        }
+        .cover-art i:nth-child(1) { width: 92px; height: 92px; left: 44px; top: 96px; }
+        .cover-art i:nth-child(2) { width: 46px; height: 46px; left: 20px; top: 168px; }
+        .cover-art i:nth-child(3) { width: 30px; height: 30px; left: 128px; top: 82px; }
+        .cover-art i:nth-child(1)::after {
+            content: "";
+            position: absolute;
+            inset: 22px;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.4);
+        }
+        .cover-foot {
+            position: relative;
+            z-index: 2;
+            padding: 8px 12px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 12px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        .cover-caption {
+            margin-top: 10px;
+            font-family: 'Source Serif 4', serif;
+            font-size: 13px;
+            line-height: 1.35;
+            color: #4a4a4a;
+        }
+        .cover-card:hover .cover-caption { color: #13807a; }
+        .cover-badge {
+            display: inline-block;
+            margin-bottom: 4px;
+            padding: 1px 8px;
+            background: #e21c21;
+            color: #ffffff;
+            font-family: 'Oswald', sans-serif;
+            font-size: 11px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        .cover-caption .cover-badge { display: table; }
+        .cover-badge-teal { background: #13807a; }
+
+        /* Gallery > Conferences — vertical timeline, newest at the top */
+        .timeline {
+            position: relative;
+            padding: 8px 0 8px;
+        }
+        .timeline::before {               /* the centre line */
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 3px;
+            transform: translateX(-50%);
+            background: linear-gradient(to bottom, #e21c21 0%, #13807a 100%);
+        }
+        .tl-year {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            margin: 28px 0 20px;
+        }
+        .tl-year:first-child { margin-top: 0; }
+        .tl-year span {
+            display: inline-block;
+            padding: 6px 22px;
+            background: #e21c21;
+            color: #ffffff;
+            font-family: 'Oswald', sans-serif;
+            font-size: 20px;
+            letter-spacing: 0.1em;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+        }
+        .tl-item {
+            position: relative;
+            width: 50%;
+            margin-bottom: 8px;
+        }
+        .tl-item + .tl-item { margin-top: -90px; }  /* let left/right cards interlock */
+        .tl-left  { padding-right: 44px; }
+        .tl-right { margin-left: 50%; padding-left: 44px; }
+        .tl-dot {
+            position: absolute;
+            top: 6px;
+            width: 18px;
+            height: 18px;
+            border-radius: 9999px;
+            background: #ffffff;
+            border: 4px solid #13807a;
+            box-shadow: 0 0 0 4px #ffffff;
+            z-index: 2;
+        }
+        .tl-left  .tl-dot { right: -9px; }
+        .tl-right .tl-dot { left: -9px; }
+        .tl-left::after, .tl-right::after {   /* short connector from dot to card */
+            content: "";
+            position: absolute;
+            top: 14px;
+            width: 34px;
+            height: 2px;
+            background: #c9c9c9;
+        }
+        .tl-left::after  { right: 9px; }
+        .tl-right::after { left: 9px; }
+        .tl-date {
+            font-family: 'Oswald', sans-serif;
+            font-size: 16px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #e21c21;
+            margin-bottom: 8px;
+            line-height: 30px;
+        }
+        .tl-left .tl-date { text-align: right; }
+        .tl-end {
+            position: relative;
+            z-index: 2;
+            width: 14px;
+            height: 14px;
+            margin: 16px auto 0;
+            border-radius: 9999px;
+            background: #13807a;
+        }
+        @media (max-width: 767px) {
+            .timeline::before { left: 9px; transform: none; }
+            .tl-year { text-align: left; }
+            .tl-item, .tl-right { width: 100%; margin-left: 0; padding: 0 0 0 40px; }
+            .tl-item + .tl-item { margin-top: 24px; }
+            .tl-left .tl-dot, .tl-right .tl-dot { left: 1px; right: auto; }
+            .tl-left::after, .tl-right::after { display: none; }
+            .tl-left .tl-date { text-align: left; }
+        }
+
+        /* Gallery photo frames — white mat + coloured stroke
+           EDIT: change the stroke width/colours here */
+        #page-gallery figure {
+            padding: 6px;
+            background: #ffffff;
+            border: 2px solid #13807a !important;          /* teal stroke */
+            outline: 1px solid rgba(19, 128, 122, 0.25);   /* soft outer hairline */
+            outline-offset: 3px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+            transition: border-color 0.2s ease, outline-color 0.2s ease, box-shadow 0.25s ease, transform 0.25s ease;
+        }
+        #page-gallery .tl-left figure {
+            border-color: #e21c21 !important;              /* red stroke on left-side events */
+            outline-color: rgba(226, 28, 33, 0.25);
+        }
+        #page-gallery figure:hover {
+            outline-color: rgba(19, 128, 122, 0.7);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+        }
+        #page-gallery .tl-left figure:hover { outline-color: rgba(226, 28, 33, 0.7); }
+
+        /* Home > Latest News — upward ticker showing 5 rows at a time.
+           EDIT: --news-row is the height of one news row; the box is 5 rows tall. */
+        .news-ticker {
+            --news-row: 76px;
+            position: relative;
+            height: calc(var(--news-row) * 5);
+            overflow: hidden;
+            background: #ffffff;
+            border-left: 3px solid #e21c21;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+        }
+        .news-ticker::after {          /* soft fade at the bottom edge */
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 22px;
+            background: linear-gradient(to bottom, rgba(255,255,255,0), #ffffff);
+            pointer-events: none;
+        }
+        .news-list { margin: 0; padding: 0; list-style: none; will-change: transform; }
+        .news-list.rolling {
+            animation: newsRoll var(--news-duration, 40s) linear infinite;
+        }
+        .news-ticker:hover .news-list.rolling { animation-play-state: paused; }
+        @keyframes newsRoll {
+            from { transform: translateY(0); }
+            to   { transform: translateY(-50%); }
+        }
+        .news-list li {
+            box-sizing: border-box;
+            height: var(--news-row);
+            padding: 8px 12px 6px 14px;
+            border-bottom: 1px solid #ececec;
+            overflow: hidden;
+        }
+        .news-list li:hover { background: #f3faf9; }
+        .news-list .news-date {
+            display: block;
+            font-size: 13px;
+            line-height: 18px;
+            margin-bottom: 4px;
+        }
+        .news-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-height: 20px;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .news-ticker { overflow-y: auto; }
+        }
+
+        /* Research card titles — Cooper Hewitt
+           EDIT: change size / weight / colour of the research theme titles here */
+        #page-research .grid h3 {
+            font-family: 'Cooper Hewitt', 'Oswald', sans-serif;
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 1.25;
+            letter-spacing: 0.01em;
+        }
+
+        /* Research card image / animation */
+        .research-media {
+            background: #ffffff;
+            border: 1px solid #e3e3e3;
+            padding: 6px;
+        }
+        .research-media img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 5 / 4;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+        .lab-banner {
+            background: #e21c21;
+            color: #ffffff;
+        }
+        /* Gallery sub-tabs */
+        .subpage { display: none; }
+        .subpage.active { display: block; }
+        /* "All" sub-tab: show every sub-page stacked, each with its heading */
+        #page-gallery.show-all .subpage { display: block; }
+        #page-gallery.show-all .subpage + .subpage { margin-top: 3rem; }
+        .subpage-heading { display: none; }
+        #page-gallery.show-all .subpage-heading { display: flex; }
+        .subtab-link.active-subtab {
+            background-color: #e21c21;
+            border-color: #e21c21;
+            color: #ffffff;
+        }
+
+        /* Home banner / highlight carousel */
+        .hero-banner {
+            position: relative;
+            width: 100%;
+            border-radius: 0;
+            overflow: hidden;
+            isolation: isolate;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+        }
+        .hero-track {
+            position: relative;
+            min-height: 240px;
+        }
+        .hero-slide {
+            display: none;
+            position: relative;
+            min-height: 240px;
+            align-items: center;
+            padding: 2.25rem 2.5rem;
+            gap: 1.5rem;
+            overflow: hidden;
+        }
+        .hero-slide.active {
+            display: flex;
+            animation: heroFadeIn 0.7s ease;
+        }
+        @keyframes heroFadeIn {
+            from { opacity: 0; transform: translateX(24px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .hero-slide-icon {
+            position: absolute;
+            right: -20px;
+            bottom: -30px;
+            font-size: 220px !important;
+            opacity: 0.14;
+            color: #ffffff;
+            pointer-events: none;
+            line-height: 1;
+        }
+        .hero-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 9999px;
+            background: rgba(255,255,255,0.18);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            z-index: 10;
+            border: 1px solid rgba(255,255,255,0.35);
+        }
+        .hero-arrow:hover { background: rgba(255,255,255,0.32); }
+        .hero-arrow.prev { left: 14px; }
+        .hero-arrow.next { right: 14px; }
+        .hero-dots {
+            position: absolute;
+            bottom: 14px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+        .hero-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 9999px;
+            background: rgba(255,255,255,0.45);
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        .hero-dot.active-dot {
+            background: #ffffff;
+            width: 22px;
+        }
+        @media (max-width: 640px) {
+            .hero-slide { padding: 1.75rem 1.5rem; min-height: 300px; }
+            .hero-slide-icon { font-size: 150px !important; }
+        }
+
+        /* Gallery > Conferences — per-card sliding image carousel */
+        .conf-slider {
+            position: relative;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            background: #171c1f;
+        }
+        .conf-slide {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.6s ease;
+            pointer-events: none;
+        }
+        .conf-slide.active-slide { opacity: 1; pointer-events: auto; }
+        .conf-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 26px;
+            border-radius: 9999px;
+            background: rgba(0,0,0,0.4);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            z-index: 5;
+        }
+        .conf-arrow:hover { background: rgba(0,0,0,0.6); }
+        .conf-arrow.prev { left: 8px; }
+        .conf-arrow.next { right: 8px; }
+        .conf-dots {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 6px;
+            z-index: 5;
+        }
+        .conf-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 9999px;
+            background: rgba(255,255,255,0.55);
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        .conf-dot.active-dot { background: #ffffff; width: 16px; }
+        .conf-caption-overlay {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 4;
+            padding: 28px 14px 12px;
+            background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.6) 45%, rgba(0,0,0,0) 100%);
+            pointer-events: none;
+        }
+        .conf-caption-overlay p { margin: 0; }
+        .conf-title-overlay {
+            color: #ffffff;
+            margin-bottom: 3px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+        }
+        .conf-text-overlay {
+            color: rgba(255,255,255,0.9);
+            text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+        }
+
+        /* Click-to-enlarge lightbox for gallery / conference images */
+        .gallery-img, .conf-slide { cursor: pointer; }
+        .gallery-img-wrap { position: relative; overflow: hidden; }
+        .img-zoom-icon, .conf-zoom-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 44px;
+            height: 44px;
+            border-radius: 9999px;
+            background: rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.4);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            pointer-events: none;
+            z-index: 6;
+        }
+        .gallery-img-wrap:hover .img-zoom-icon,
+        .conf-slider:hover .conf-zoom-icon {
+            opacity: 1;
+        }
+        .lightbox-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.92);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .lightbox-overlay.open { display: flex; }
+        .lightbox-overlay img {
+            max-width: 92vw;
+            max-height: 88vh;
+            object-fit: contain;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            animation: lightboxZoom 0.2s ease;
+        }
+        @keyframes lightboxZoom {
+            from { opacity: 0; transform: scale(0.96); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 18px;
+            right: 24px;
+            width: 40px;
+            height: 40px;
+            border-radius: 9999px;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1001;
+        }
+        .lightbox-close:hover { background: rgba(255,255,255,0.25); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
+
+<!-- Header: large name + affiliation, like a lab masthead -->
+<header class="bg-white">
+<div class="max-w-[1200px] mx-auto flex justify-between items-center gap-4 px-gutter py-6">
+<button class="text-left" onclick="showPage('home')">
+<span class="block font-['Oswald'] text-[34px] md:text-[48px] leading-tight font-medium uppercase tracking-wide text-[#111]">Manohar Jammula</span>
+<span class="block font-['Oswald'] text-[15px] md:text-[18px] uppercase tracking-[0.18em] text-[#e21c21]">CFD &amp; Microfluidics Research</span>
+</button>
+<div class="hidden md:flex flex-col items-end gap-3 text-right">
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug"><a class="text-secondary hover:text-[#e21c21] font-bold underline" href="https://mfmlab.iitdh.ac.in/" target="_blank" rel="noopener">Multiphase Flow &amp; Microfluidics Lab</a><br/>Department of Chemical Engineering, IIT Dharwad</p>
+<a href="https://drive.google.com/uc?export=download&id=1WyCUYNi70PL1IcRPloQA3iP7rzDuvf8J" target="_blank" class="bg-[#e21c21] text-white px-5 py-2 font-['Oswald'] uppercase tracking-wider text-[14px] hover:bg-[#b3181d] transition-colors inline-block shadow">Download CV</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button id="mobileMenuBtn" class="md:hidden text-[#e21c21]" onclick="document.getElementById('mobileNav').classList.toggle('open')">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
+</div>
+</header>
+
+<!-- Red menu bar -->
+<nav class="lab-menu full-width top-0 z-50 sticky">
+<div class="max-w-[1200px] mx-auto hidden md:flex justify-center items-stretch">
+<button data-page="home" class="nav-link px-6 py-3" onclick="showPage('home')">Home</button>
+<button data-page="research" class="nav-link px-6 py-3" onclick="showPage('research')">Research</button>
+<button data-page="publications" class="nav-link px-6 py-3" onclick="showPage('publications')">Publications</button>
+<button data-page="gallery" class="nav-link px-6 py-3" onclick="showPage('gallery')">Gallery</button>
+<button data-page="contact" class="nav-link px-6 py-3" onclick="showPage('contact')">Contact Us</button>
+</div>
+<!-- Mobile Nav Panel -->
+<div id="mobileNav" class="mobile-nav md:hidden flex-col">
+<button data-page="home" class="nav-link text-left px-gutter py-3" onclick="showPage('home')">Home</button>
+<button data-page="research" class="nav-link text-left px-gutter py-3" onclick="showPage('research')">Research</button>
+<button data-page="publications" class="nav-link text-left px-gutter py-3" onclick="showPage('publications')">Publications</button>
+<button data-page="gallery" class="nav-link text-left px-gutter py-3" onclick="showPage('gallery')">Gallery</button>
+<button data-page="contact" class="nav-link text-left px-gutter py-3" onclick="showPage('contact')">Contact Us</button>
+<a href="https://drive.google.com/uc?export=download&id=1WyCUYNi70PL1IcRPloQA3iP7rzDuvf8J" target="_blank" class="nav-link px-gutter py-3">Download CV</a>
+</div>
+</nav>
+
+<main class="max-w-[1200px] mx-auto px-gutter py-12 flex-1 w-full">
+
+<!-- ============================================================ -->
+<!-- PAGE: Home -->
+<!-- ============================================================ -->
+<section id="page-home" class="page active">
+
+<!-- EDIT: Home Banner — highlight carousel. To add a slide, copy one
+     ".hero-slide" block (and its matching dot button below it) and edit
+     the icon name, gradient colors, heading, text, and button. -->
+<div class="hero-banner mb-10" id="heroBanner" onmouseenter="heroPause()" onmouseleave="heroResume()">
+<div class="hero-track">
+
+<div class="hero-slide active" style="background: linear-gradient(120deg, #1a1a1a 0%, #8f1216 100%);">
+<span class="material-symbols-outlined hero-slide-icon">blur_on</span>
+<div class="relative z-[1] max-w-xl">
+<p class="font-body-sm text-body-sm text-white/80 uppercase tracking-wide mb-2">Core Research</p>
+<h2 class="font-headline-lg text-headline-lg text-white mb-3">Compound Droplet Generation &amp; Deformation</h2>
+<p class="font-body-md text-body-md text-white/90 mb-5 leading-relaxed">CFD modelling of core-shell droplet formation in coflow microchannels using VOF / CLSVOF interface-capturing methods.</p>
+<button class="bg-white text-[#e21c21] px-5 py-2 font-['Oswald'] uppercase tracking-wider text-[14px] hover:bg-white/90 transition-colors" onclick="showPage('research')">Explore Research</button>
+</div>
+</div>
+
+<div class="hero-slide" style="background: linear-gradient(120deg, #0e5f5a 0%, #13807a 100%);">
+<span class="material-symbols-outlined hero-slide-icon">groups</span>
+<div class="relative z-[1] max-w-xl">
+<p class="font-body-sm text-body-sm text-white/80 uppercase tracking-wide mb-2">Organizing &amp; Hosting</p>
+<h2 class="font-headline-lg text-headline-lg text-white mb-3">National Symposium 2026</h2>
+<p class="font-body-md text-body-md text-white/90 mb-5 leading-relaxed">Multiphase Flow Modeling, Microfluidics, CFD, Advanced Materials &amp; AI-Driven Simulation — Dec 3–4, 2026, IIT Dharwad.</p>
+<a class="inline-block bg-white text-[#e21c21] px-5 py-2 font-['Oswald'] uppercase tracking-wider text-[14px] hover:bg-white/90 transition-colors" href="https://mfmiitdh.github.io/MFMAI/" target="_blank" rel="noopener">Get in Touch</a>
+</div>
+</div>
+
+<div class="hero-slide" style="background: linear-gradient(120deg, #1a1a1a 0%, #0e5f5a 100%);">
+<span class="material-symbols-outlined hero-slide-icon">memory</span>
+<div class="relative z-[1] max-w-xl">
+<p class="font-body-sm text-body-sm text-white/80 uppercase tracking-wide mb-2">Tools &amp; Computing</p>
+<h2 class="font-headline-lg text-headline-lg text-white mb-3">ANSYS Fluent, OpenFOAM, RheoTool &amp; COMSOL</h2>
+<p class="font-body-md text-body-md text-white/90 mb-5 leading-relaxed">Custom UDF development, non-Newtonian flow solvers, and large-scale simulations across multiple CFD platforms, paired with ML-assisted modelling.</p>
+<button class="bg-white text-[#e21c21] px-5 py-2 font-['Oswald'] uppercase tracking-wider text-[14px] hover:bg-white/90 transition-colors" onclick="showPage('research')">See Toolkit</button>
+</div>
+</div>
+
+</div>
+<div class="hero-arrow prev" onclick="heroNav(-1)"><span class="material-symbols-outlined">chevron_left</span></div>
+<div class="hero-arrow next" onclick="heroNav(1)"><span class="material-symbols-outlined">chevron_right</span></div>
+<div class="hero-dots">
+<div class="hero-dot active-dot" onclick="heroGoTo(0)"></div>
+<div class="hero-dot" onclick="heroGoTo(1)"></div>
+<div class="hero-dot" onclick="heroGoTo(2)"></div>
+</div>
+</div>
+
+<!-- EDIT: Welcome — photo + intro text (the reference site's "Welcome" block) -->
+<div class="grid grid-cols-12 gap-8 items-start mb-10">
+<div class="col-span-12 md:col-span-4">
+<div class="bg-surface-container-lowest border p-5 flex flex-col items-center text-center card-hover-effect">
+<div class="w-full aspect-square overflow-hidden mb-5">
+<img alt="Manohar Jammula" class="w-full h-full object-cover" style="object-position: center top;" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDte7TA7e88YAVrR3iN_RxfBj8rfZ9z23ySJoKgzutis4e213TVYMy16gRpjD-pIeouBcPaCWWKBMGTznwnjWrP0Hq7RE3Rz5BeQT2Bai-3L1V0kBelfDl2S5RprDQ5qPrWp0qm5HDWwCbJy4aedGsU0RjoY08TfJhxm6zUjh69fP38eICd4iny1jZ9EGL5qhfUfl8xMnJDyzW-WijikZXsxXqssR9tpkNCQbFKguDbzlNFJiB3yUFLExpjMcae0fifaQ"/>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary mb-1">Mr. Manohar Jammula</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">PhD Research Scholar, Department of Chemical Engineering, IIT Dharwad</p>
+<div class="flex gap-4 flex-wrap justify-center">
+<a class="text-secondary hover:text-[#e21c21] transition-colors flex items-center gap-1 font-body-sm text-body-sm font-bold" href="mailto:ch23dp001@iitdh.ac.in">
+<span class="material-symbols-outlined text-[18px]">mail</span> Email
+</a>
+<a class="text-secondary hover:text-[#e21c21] transition-colors flex items-center gap-1 font-body-sm text-body-sm font-bold" href="https://www.linkedin.com/in/manohar-jammula-32a208115/" target="_blank">
+<span class="material-symbols-outlined text-[18px]">link</span> LinkedIn
+</a>
+<a class="text-secondary hover:text-[#e21c21] transition-colors flex items-center gap-1 font-body-sm text-body-sm font-bold" href="https://scholar.google.com/citations?user=2wtMJpwAAAAJ&hl=en&oi=ao" target="_blank">
+<span class="material-symbols-outlined text-[18px]">school</span> Scholar
+</a>
+</div>
+</div>
+</div>
+
+<div class="col-span-12 md:col-span-8">
+<h2 class="section-title font-headline-lg text-headline-lg text-primary mb-5">Welcome</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-5 leading-relaxed">
+I am a doctoral researcher at the <a class="text-secondary hover:text-[#e21c21] font-bold underline" href="https://mfmlab.iitdh.ac.in/" target="_blank">Multiphase Flow &amp; Microfluidics (MFM) Laboratory</a> under the guidance of Dr. Somasekhara Goud Sontti. My research lies at the intersection of computational fluid dynamics (CFD) and microfluidics, focusing on understanding complex multiphase transport phenomena in microfluidic devices — particularly the generation and deformation of compound (core-shell) droplets.
+</p>
+<div class="bg-research-highlight border-l-4 border-secondary p-5 mb-6">
+<p class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">science</span>
+<span><strong class="font-bold">Core Focus:</strong> Compound droplets, microfluidics, and computational fluid dynamics (CFD)</span>
+</p>
+</div>
+<div class="flex flex-wrap gap-3">
+<button class="bg-[#e21c21] text-white px-5 py-2 font-['Oswald'] uppercase tracking-wider text-[14px] hover:bg-[#b3181d] transition-colors shadow" onclick="showPage('research')">Our Research</button>
+<button class="bg-secondary text-white px-5 py-2 font-['Oswald'] uppercase tracking-wider text-[14px] hover:bg-[#0e5f5a] transition-colors shadow" onclick="showPage('publications')">Publications</button>
+</div>
+</div>
+</div>
+
+<!-- EDIT: Announcement strip (the reference site's red "we're recruiting" banner) -->
+<div class="lab-banner shadow mb-10 px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-3">
+<p class="font-['Oswald'] text-[18px] md:text-[20px] uppercase tracking-wide flex items-center gap-3">
+<span class="material-symbols-outlined">campaign</span>
+National Symposium 2026 — Dec 3–4, IIT Dharwad
+</p>
+<a class="inline-block bg-white text-[#e21c21] px-5 py-2 font-['Oswald'] uppercase tracking-wider text-[14px] hover:bg-white/90 transition-colors self-start md:self-auto" href="https://mfmiitdh.github.io/MFMAI/" target="_blank" rel="noopener">Get in Touch</a>
+</div>
+
+<!-- Three columns: News | Research Highlights | Journey -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+<!-- EDIT: Latest News — scrolls upward, 5 items visible at a time.
+     Keep items NEWEST FIRST. To add one, copy an <li> to the top of the
+     list and edit the date + text (keep text to ~2 short lines; longer
+     text is trimmed with "…" but shown in full on hover).
+     Scroll speed: see newsIntervalMs in the script near the bottom. -->
+<div>
+<h3 class="section-title font-headline-md text-headline-md text-primary mb-5">Latest News</h3>
+<div class="news-ticker" id="newsTicker">
+<ul class="news-list font-body-sm text-body-sm text-on-surface-variant">
+<li><span class="news-date">05/2026</span><span class="news-text">Presented at Microfluidic Horizons 2026 (MH 2026), Padua, Italy.</span></li>
+<li><span class="news-date">04/2026</span><span class="news-text">Book chapter published in <em>Microfluidic Devices: Advances in Research and Applications</em> (Nova Science Publishers).</span></li>
+<li><span class="news-date">04/2026</span><span class="news-text">Secured 1st runner-up in the ANSYS Student Hackathon at IIT Dharwad.</span></li>
+<li><span class="news-date">12/2025</span><span class="news-text">Attended a one-week workshop on GPU-CFD at IIT Dharwad.</span></li>
+<li><span class="news-date">11/2025</span><span class="news-text">Presented at ICOM-2025 (2nd Intl. Conference on Micro Nano Fluidics), IIT Guwahati, Assam.</span></li>
+<li><span class="news-date">07/2025</span><span class="news-text">Paper published in <em>Physics of Fluids</em> on high-throughput droplet generation in shear-thinning fluids.</span></li>
+<li><span class="news-date">02/2025</span><span class="news-text">Paper published in <em>Ind. Eng. Chem. Res.</em> on controlled droplet formation in a coflow device.</span></li>
+<li><span class="news-date">02/2025</span><span class="news-text">Attended the SPARC workshop on CFD and Multiphase Flow at IIT Dharwad.</span></li>
+<li><span class="news-date">12/2024</span><span class="news-text">Presented research at IIChE-CHEMCON 2024, NIT Jalandhar, Punjab.</span></li>
+<li><span class="news-date">12/2024</span><span class="news-text">Presented work on compound droplet dynamics in a constricted microchannel at CompFlu 2024, IIT Hyderabad.</span></li>
+<li><span class="news-date">06/2024</span><span class="news-text">Presented at ICFTES 2024, NIT Calicut, Kerala.</span></li>
+<li><span class="news-date">02/2024</span><span class="news-text">Presented at the 1st Intl. Conference on Trends in Chemical, Energy and Environmental Engineering, IIPE Visakhapatnam.</span></li>
+</ul>
+</div>
+<button class="mt-4 text-secondary hover:text-[#e21c21] font-['Oswald'] uppercase tracking-wider text-[14px] flex items-center gap-1" onclick="showPage('gallery')">See gallery <span class="material-symbols-outlined text-[18px]">arrow_forward</span></button>
+
+<!-- EDIT: Upcoming -->
+<h3 class="section-title font-headline-md text-headline-md text-primary mt-8 mb-5">Upcoming</h3>
+<ul class="flex flex-col gap-3 font-body-sm text-body-sm text-on-surface-variant">
+<li><span class="news-date">12/2026</span> — National Symposium 2026 (organizing), Dec 3–4, IIT Dharwad. <a class="text-secondary hover:text-[#e21c21] font-bold underline" href="https://mfmiitdh.github.io/MFMAI/" target="_blank" rel="noopener">Details</a></li>
+</ul>
+</div>
+
+<!-- EDIT: Research Highlights -->
+<div>
+<h3 class="section-title font-headline-md text-headline-md text-primary mb-5">Research Highlights</h3>
+<div class="flex flex-col gap-4">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-secondary text-[28px] shrink-0">water_drop</span>
+<div>
+<h4 class="font-body-md text-body-md font-bold text-on-surface">Droplet Dynamics</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">CFD modelling of droplet and bubble formation using VOF and CLSVOF interface-capturing methods.</p>
+</div>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-secondary text-[28px] shrink-0">waves</span>
+<div>
+<h4 class="font-body-md text-body-md font-bold text-on-surface">Non-Newtonian Flows</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Shear-thinning power-law fluids (CMC solutions) in confined geometries and microfluidic devices.</p>
+</div>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-secondary text-[28px] shrink-0">blur_on</span>
+<div>
+<h4 class="font-body-md text-body-md font-bold text-on-surface">Compound Droplets</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Numerical insights on controlled double-emulsion droplet formation in miniature channels.</p>
+</div>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-secondary text-[28px] shrink-0">memory</span>
+<div>
+<h4 class="font-body-md text-body-md font-bold text-on-surface">Microreactors</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">High-throughput controlled generation for lab-on-chip systems and materials synthesis.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- EDIT: Academic Journey -->
+<div class="flex flex-col gap-8">
+<div>
+<h3 class="section-title font-headline-md text-headline-md text-primary mb-5">Academic Journey</h3>
+<div class="relative pl-6 border-l-2 border-surface-variant flex flex-col gap-5">
+<div class="relative">
+<div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-secondary border-2 border-white"></div>
+<h4 class="font-body-md text-body-md font-bold text-on-surface">Ph.D. Chemical Engineering</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">IIT Dharwad (2023 – Present)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Advisor: Dr. Somasekhara Goud Sontti</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-[#e21c21] border-2 border-white"></div>
+<h4 class="font-body-md text-body-md font-bold text-on-surface">M.Tech Chemical Engineering</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">NIT Karnataka, Surathkal (2019 – 2021)</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-surface-variant border-2 border-white"></div>
+<h4 class="font-body-md text-body-md font-bold text-on-surface">B.Tech Chemical Engineering</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">CBIT, Hyderabad (2014 – 2017)</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE: Research -->
+<!-- ============================================================ -->
+<section id="page-research" class="page">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Research Areas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-3xl">A closer look at the problems I work on in the <a class="text-secondary hover:text-primary underline" href="https://mfmlab.iitdh.ac.in/" target="_blank">MFM Lab</a>, using ANSYS Fluent (VOF / CLSVOF) and high-performance computing.</p>
+<!-- EDIT: Research Areas — 2 cards per row. To add an image to a card,
+     copy the <div class="research-media"> block from the first card.
+     Google Drive images MUST use this link format to show on the site:
+       https://drive.google.com/thumbnail?id=FILE_ID&sz=w1000
+     (the "uc?export=view" format is blocked by Google on other websites). -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-6 card-hover-effect">
+<span class="material-symbols-outlined text-primary text-[32px] mb-3 block">water_drop</span>
+<h3 class="font-body-md text-body-md font-bold text-on-surface mb-3">Compound Droplet Generation</h3>
+<div class="research-media mb-3">
+<img src="https://drive.google.com/thumbnail?id=1doy6C7QP9fKchXpVZX3pZumXeJSCf1nZ&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1doy6C7QP9fKchXpVZX3pZumXeJSCf1nZ&sz=w1000" alt="Simulation of compound droplet formation" loading="lazy" onclick="openLightbox(this)"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">CFD simulation of controlled core-shell compound droplet generation in passive microfluidic devices involving complex fluids.</p>
+</div>
+
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-6 card-hover-effect">
+<span class="material-symbols-outlined text-primary text-[32px] mb-3 block">crop_free</span>
+<h3 class="font-body-md text-body-md font-bold text-on-surface mb-3">Compound Droplet Dynamics</h3>
+<div class="research-media mb-3">
+<img src="https://drive.google.com/thumbnail?id=1otTOchzBbYeVOrwqX44qlxWIvt0PZL-K&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1otTOchzBbYeVOrwqX44qlxWIvt0PZL-K&sz=w1000" alt="Simulation of compound droplet dynamics through a constricted microchannel" loading="lazy" onclick="openLightbox(this)"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Compound droplet deformation and dynamics while passing through constricted microchannels.</p>
+</div>
+
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-6 card-hover-effect">
+<span class="material-symbols-outlined text-primary text-[32px] mb-3 block">tune</span>
+<h3 class="font-body-md text-body-md font-bold text-on-surface mb-3">Non-Newtonian Rheology</h3>
+<div class="research-media mb-3">
+<img src="https://drive.google.com/thumbnail?id=1lrs1qJPkxrWQw-KYFXezhALvV0rSwhZS&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1lrs1qJPkxrWQw-KYFXezhALvV0rSwhZS&sz=w1000" alt="Viscosity versus shear rate for Newtonian and shear-thinning CMC solutions" loading="lazy" onclick="openLightbox(this)"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Microfluidics involving complex fluids is investigated for the generation of single and compound droplets, and the influence of micromixing within the droplets.</p>
+</div>
+
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-6 card-hover-effect">
+<span class="material-symbols-outlined text-primary text-[32px] mb-3 block">cyclone</span>
+<h3 class="font-body-md text-body-md font-bold text-on-surface mb-3">Mixing within Microreactor</h3>
+<div class="research-media mb-3">
+<img src="https://drive.google.com/thumbnail?id=1E_0VvRXgdz0PP7vQ59lO2o1h8J0kFUMN&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1E_0VvRXgdz0PP7vQ59lO2o1h8J0kFUMN&sz=w1000" alt="Mixing inside a shell-protected core microreactor" loading="lazy" onclick="openLightbox(this)"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mixing of components within the shell-protected core microreactor for extraction applications.</p>
+</div>
+
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-6 card-hover-effect">
+<span class="material-symbols-outlined text-primary text-[32px] mb-3 block">insights</span>
+<h3 class="font-body-md text-body-md font-bold text-on-surface mb-2">Data-Driven &amp; ML-Assisted Modelling</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Response-surface and physics-informed neural network (PINN) models built on parametric CFD datasets to predict droplet size, shell thickness, and formation frequency.</p>
+</div>
+
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-6 card-hover-effect">
+<span class="material-symbols-outlined text-primary text-[32px] mb-3 block">biotech</span>
+<h3 class="font-body-md text-body-md font-bold text-on-surface mb-2">Applications</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Findings support controlled microcapsule and double-emulsion synthesis for drug delivery, encapsulation, and lab-on-chip materials processing.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE: Publications -->
+<!-- ============================================================ -->
+<section id="page-publications" class="page">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Publications</h2>
+
+<!-- EDIT: Journal front covers — scrolling strip (moves left → right,
+     pauses on hover, click a cover to open the paper).
+     To add a journal: copy one <a class="cover-card"> block inside
+     .cover-set and edit it. You only need each journal ONCE — the
+     script repeats them automatically to fill the strip.
+     To use a REAL cover image: save it next to this file and add
+       <img class="cover-img" src="my-cover.jpg" alt="Journal cover"/>
+     as the first line inside that card's <div class="cover">. The
+     image then sits on top of the styled placeholder. -->
+<div class="cover-marquee mb-12" id="coverMarquee">
+<div class="cover-track">
+<div class="cover-set">
+
+<a class="cover-card" href="https://doi.org/10.1021/acs.iecr.4c03141" target="_blank" title="Ind. Eng. Chem. Res. 64(5), 2025">
+<div class="cover" style="--c1:#b3181d; --c2:#e21c21;">
+<img class="cover-img" src="https://drive.google.com/thumbnail?id=1RV_IP6dGjAGoPeYCxarFHKIOCww6tfNw&sz=w1000" alt="Ind. Eng. Chem. Res. Vol. 64, Issue 5 cover" onerror="this.remove()"/>
+<div class="cover-head">
+<span class="cover-pub">ACS Publications</span>
+<span class="cover-journal">Industrial &amp; Engineering Chemistry Research</span>
+</div>
+<div class="cover-art"><i></i><i></i><i></i></div>
+<div class="cover-foot">Vol. 64 · Issue 5 · 2025</div>
+</div>
+<p class="cover-caption"><span class="cover-badge">Cover Article</span>Controlled droplet formation in a shear-thinning coflow device</p>
+</a>
+
+<a class="cover-card" href="https://doi.org/10.1063/5.0272678" target="_blank" title="Physics of Fluids 37(7), 2025">
+<div class="cover" style="--c1:#0e5f5a; --c2:#13807a;">
+<img class="cover-img" src="https://drive.google.com/thumbnail?id=11ZYDq5vMJHa5ViaV7r86x40wOg_sJD0I&sz=w1000" alt="Physics of Fluids Vol. 37, Issue 7 cover" onerror="this.remove()"/>
+<div class="cover-head">
+<span class="cover-pub">AIP Publishing</span>
+<span class="cover-journal">Physics of Fluids</span>
+</div>
+<div class="cover-art"><i></i><i></i><i></i></div>
+<div class="cover-foot">Vol. 37 · Issue 7 · 2025</div>
+</div>
+<p class="cover-caption">High-throughput droplet generation in a flow-focusing microchannel</p>
+</a>
+
+<a class="cover-card" href="https://doi.org/10.52305/DAGW7738" target="_blank" title="Microfluidic Devices: Advances in Research and Applications (Nova, 2026)">
+<div class="cover" style="--c1:#1a1a1a; --c2:#0e5f5a;">
+<img class="cover-img" src="https://drive.google.com/thumbnail?id=1RGj3FtZdhEMFAr6PbHF8koj9rXzKNAB_&sz=w1000" alt="Microfluidic Devices: Advances in Research and Applications book cover" onerror="this.remove()"/>
+<div class="cover-head">
+<span class="cover-pub">Nova Science Publishers</span>
+<span class="cover-journal">Microfluidic Devices</span>
+</div>
+<div class="cover-art"><i></i><i></i><i></i></div>
+<div class="cover-foot">Book Chapter · 2026</div>
+</div>
+<p class="cover-caption"><span class="cover-badge cover-badge-teal">Book Chapter</span>Microdroplet formation in a non-Newtonian co-flow device</p>
+</a>
+
+</div>
+</div>
+</div>
+
+<h3 class="section-title font-headline-md text-headline-md text-primary mb-6">Journal Papers</h3>
+<div class="flex flex-col gap-4">
+
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-6 card-hover-effect flex gap-4">
+<div class="w-10 h-10 rounded bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">article</span>
+</div>
+<div>
+<h3 class="font-body-md text-body-md font-bold text-on-surface mb-1">Jammula, M.; Sontti, S. G. (Jul 2025)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">High-Throughput Controlled Droplets Generation through a Flow-Focusing Microchannel in Shear-Thinning Fluids.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant"><span class="font-label-mono text-label-mono text-secondary">Phys. Fluids</span> 37(7), 072021. <a class="text-secondary hover:text-primary underline" href="https://doi.org/10.1063/5.0272678" target="_blank">DOI</a></p>
+</div>
+</div>
+
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-6 card-hover-effect flex gap-4">
+<div class="w-10 h-10 rounded bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">article</span>
+</div>
+<div>
+<h3 class="font-body-md text-body-md font-bold text-on-surface mb-1">Jammula, M.; Sontti, S. G. (Feb 2025)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">Numerical Analysis of Controlled Droplet Formation Surrounded by a Shear-Thinning Fluid in a Coflow Microfluidic Device.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant"><span class="font-label-mono text-label-mono text-secondary">Ind. Eng. Chem. Res.</span> 64(5), 2977–2994. <a class="text-secondary hover:text-primary underline" href="https://doi.org/10.1021/acs.iecr.4c03141" target="_blank">DOI</a></p>
+</div>
+</div>
+
+</div>
+
+<!-- EDIT: Book Chapters — copy one card to add another chapter -->
+<h3 class="section-title font-headline-md text-headline-md text-primary mt-12 mb-6">Book Chapters</h3>
+<div class="flex flex-col gap-4">
+
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-6 card-hover-effect flex gap-4">
+<div class="w-10 h-10 rounded bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">menu_book</span>
+</div>
+<div>
+<h3 class="font-body-md text-body-md font-bold text-on-surface mb-1">Jammula, M.; Sontti, S. G. (2026)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">CFD Investigation on Microdroplet Formation and Dynamics in a Non-Newtonian Fluid Using a Co-Flow Microfluidic Device.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">In <em>Microfluidic Devices: Advances in Research and Applications</em>, <span class="font-label-mono text-label-mono text-secondary">Nova Science Publishers</span>. <a class="text-secondary hover:text-primary underline" href="https://doi.org/10.52305/DAGW7738" target="_blank">DOI</a> · <a class="text-secondary hover:text-primary underline" href="https://novapublishers.com/shop/microfluidic-devices-advances-in-research-and-applications/" target="_blank">Publisher</a> · <a class="text-secondary hover:text-primary underline" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2wtMJpwAAAAJ&citation_for_view=2wtMJpwAAAAJ:8k81kl-MbHgC" target="_blank">Google Scholar</a></p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE: Gallery -->
+<!-- ============================================================ -->
+<section id="page-gallery" class="page">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Gallery</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-3xl">Simulation figures from my research, and people I've connected with along the way.</p>
+
+<!-- Gallery sub-tabs -->
+<div class="flex flex-wrap gap-3 mb-8 border-b border-surface-variant pb-4">
+<button data-subtab="all" class="subtab-link px-4 py-2 rounded-full font-body-sm text-body-sm font-bold border border-surface-variant text-on-surface-variant hover:border-primary transition-colors flex items-center gap-2" onclick="showSubtab('all')">
+<span class="material-symbols-outlined text-[18px]">photo_library</span> All
+</button>
+<button data-subtab="research" class="subtab-link px-4 py-2 rounded-full font-body-sm text-body-sm font-bold border border-surface-variant text-on-surface-variant hover:border-primary transition-colors flex items-center gap-2" onclick="showSubtab('research')">
+<span class="material-symbols-outlined text-[18px]">science</span> Research Images
+</button>
+<button data-subtab="networking" class="subtab-link px-4 py-2 rounded-full font-body-sm text-body-sm font-bold border border-surface-variant text-on-surface-variant hover:border-primary transition-colors flex items-center gap-2" onclick="showSubtab('networking')">
+<span class="material-symbols-outlined text-[18px]">groups</span> Networking
+</button>
+<button data-subtab="conferences" class="subtab-link px-4 py-2 rounded-full font-body-sm text-body-sm font-bold border border-surface-variant text-on-surface-variant hover:border-primary transition-colors flex items-center gap-2" onclick="showSubtab('conferences')">
+<span class="material-symbols-outlined text-[18px]">travel_explore</span> Conferences
+</button>
+</div>
+
+<!-- ============================================================ -->
+<!-- SUB-PAGE: Research Images -->
+<!-- EDIT: Gallery > Research Images — swap image URLs / captions -->
+<!-- ============================================================ -->
+<div id="subpage-research" class="subpage active">
+<h3 class="subpage-heading items-center gap-2 font-headline-md text-headline-md text-primary mb-4"><span class="material-symbols-outlined">science</span> Research Images</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+<figure class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="gallery-img-wrap">
+<img class="gallery-img w-full" alt="3D printer setup for microfluidic device printing" src="https://drive.google.com/thumbnail?id=1nlbFSZQ4eeFyxldaDRS1X7Y2V-K6hYfq&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1nlbFSZQ4eeFyxldaDRS1X7Y2V-K6hYfq&sz=w2000" loading="lazy" onclick="openLightbox(this)"/>
+<div class="img-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+</div>
+<figcaption class="p-4 font-body-sm text-body-sm text-on-surface-variant">3D printer setup for the microfluidic device printing</figcaption>
+</figure>
+<figure class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="gallery-img-wrap">
+<img class="gallery-img w-full" alt="3D printed flow-focusing microfluidic device" src="https://drive.google.com/thumbnail?id=1-f0jTpDfLakAIF2JkSaqTUEd4Mvndr2s&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1-f0jTpDfLakAIF2JkSaqTUEd4Mvndr2s&sz=w2000" loading="lazy" onclick="openLightbox(this)"/>
+<div class="img-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+</div>
+<figcaption class="p-4 font-body-sm text-body-sm text-on-surface-variant">3D printed flow-focusing microfluidic device</figcaption>
+</figure>
+<!-- portrait photo: object-position keeps the top (face + device) and crops the bottom -->
+<figure class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="gallery-img-wrap">
+<img class="gallery-img w-full" style="object-position: center 4%;" alt="Post-processing of the 3D printed microfluidic device" src="https://drive.google.com/thumbnail?id=1w--l1s5yCC9aCYgUX2W6goKSB6QxMsYA&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1w--l1s5yCC9aCYgUX2W6goKSB6QxMsYA&sz=w2000" loading="lazy" onclick="openLightbox(this)"/>
+<div class="img-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+</div>
+<figcaption class="p-4 font-body-sm text-body-sm text-on-surface-variant">Post-processing of the microfluidic device</figcaption>
+</figure>
+</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SUB-PAGE: Networking -->
+<!-- EDIT: Gallery > Networking — swap photos, names, captions -->
+<!-- ============================================================ -->
+<div id="subpage-networking" class="subpage">
+<h3 class="subpage-heading items-center gap-2 font-headline-md text-headline-md text-primary mb-4"><span class="material-symbols-outlined">groups</span> Networking</h3>
+<!-- Featured wide (16:9) group photo, shown uncropped across the full width -->
+<div class="mb-6">
+<figure class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="gallery-img-wrap">
+<img class="gallery-img w-full" style="aspect-ratio: 16 / 9;" alt="Group photo during the celebrations in the Department of Chemical Engineering, IIT Dharwad" src="https://drive.google.com/thumbnail?id=1b5PmmkFfsJVybtTjxzTrkPFnJRjrLcLV&sz=w1600" data-full="https://drive.google.com/thumbnail?id=1b5PmmkFfsJVybtTjxzTrkPFnJRjrLcLV&sz=w2000" loading="lazy" onclick="openLightbox(this)"/>
+<div class="img-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+</div>
+<figcaption class="p-4">
+<p class="font-body-sm text-body-sm font-bold text-on-surface">Department Celebrations</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">During the celebrations in the Department of Chemical Engineering, IIT Dharwad.</p>
+</figcaption>
+</figure>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+<figure class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="gallery-img-wrap">
+<img class="gallery-img w-full" alt="Prof. Rabibrata Mukherjee visiting the MFM Laboratory" src="https://drive.google.com/thumbnail?id=1PpVu52fxe0HHpaqAVgtedlLX_55kr2LT&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1PpVu52fxe0HHpaqAVgtedlLX_55kr2LT&sz=w2000" loading="lazy" onclick="openLightbox(this)"/>
+<div class="img-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+</div>
+<figcaption class="p-4">
+<p class="font-body-sm text-body-sm font-bold text-on-surface">Visit of Prof. Rabibrata Mukherjee</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">On the occasion of the visit of Prof. Rabibrata Mukherjee, IIT Kharagpur, to the <a class="text-secondary hover:text-[#e21c21] underline" href="https://mfmlab.iitdh.ac.in/" target="_blank" rel="noopener">MFM Laboratory</a>.</p>
+</figcaption>
+</figure>
+<figure class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="gallery-img-wrap">
+<img class="gallery-img w-full" style="object-position: center top;" alt="With Prof. Kirti Chandra Sahu at CompFlu-2024" src="https://drive.google.com/thumbnail?id=1f-13EM8iS6ecDCwSVfqLjL9sLUey9piq&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1f-13EM8iS6ecDCwSVfqLjL9sLUey9piq&sz=w2000" loading="lazy" onclick="openLightbox(this)"/>
+<div class="img-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+</div>
+<figcaption class="p-4">
+<p class="font-body-sm text-body-sm font-bold text-on-surface">With Prof. Kirti Chandra Sahu</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">During CompFlu-2024, with Prof. Kirti Chandra Sahu, IIT Hyderabad.</p>
+</figcaption>
+</figure>
+<!-- portrait photos: "center top" keeps the heads and crops the bottom -->
+<figure class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="gallery-img-wrap">
+<img class="gallery-img w-full" style="object-position: center top;" alt="With Prof. Suman Chakraborty at CompFlu-2024" src="https://drive.google.com/thumbnail?id=1wsi9HXgC4V4KxzVYWJ3s_X74ee2nCrHm&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1wsi9HXgC4V4KxzVYWJ3s_X74ee2nCrHm&sz=w2000" loading="lazy" onclick="openLightbox(this)"/>
+<div class="img-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+</div>
+<figcaption class="p-4">
+<p class="font-body-sm text-body-sm font-bold text-on-surface">With Prof. Suman Chakraborty</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">During CompFlu-2024, with Prof. Suman Chakraborty, IIT Kharagpur.</p>
+</figcaption>
+</figure>
+<figure class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="gallery-img-wrap">
+<img class="gallery-img w-full" alt="With Prof. Somasekhara Goud Sontti and summer interns" src="https://drive.google.com/thumbnail?id=1CWDXrXWSp4VkcXaRbkfQ1wfFHA6DcKlZ&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1CWDXrXWSp4VkcXaRbkfQ1wfFHA6DcKlZ&sz=w2000" loading="lazy" onclick="openLightbox(this)"/>
+<div class="img-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+</div>
+<figcaption class="p-4">
+<p class="font-body-sm text-body-sm font-bold text-on-surface">With Prof. Somasekhara Goud Sontti</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">With Prof. Somasekhara Goud Sontti and summer interns.</p>
+</figcaption>
+</figure>
+</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SUB-PAGE: Conferences -->
+<!-- EDIT: Gallery > Conferences — each card is a mini sliding photo
+     carousel (2-4 images) plus a caption. To add a conference, copy one
+     whole <figure class="...conf-slider..."> block, add/remove <img
+     class="conf-slide"> + matching <span class="conf-dot"> pairs (keep
+     indices in onclick="confGoTo(this,N)" in sync), and edit the title
+     and caption text.
+     TIMELINE ORDER: events are listed NEWEST FIRST. Each event is wrapped
+     in <div class="tl-item tl-left|tl-right"> with a <p class="tl-date">.
+     To add a new event, paste its whole tl-item block at the TOP (under
+     the newest year marker, or add a new <div class="tl-year">), then
+     re-alternate tl-left / tl-right down the list so sides keep zig-zagging. -->
+<!-- ============================================================ -->
+<div id="subpage-conferences" class="subpage">
+<h3 class="subpage-heading items-center gap-2 font-headline-md text-headline-md text-primary mb-4"><span class="material-symbols-outlined">travel_explore</span> Conferences</h3>
+<div class="timeline">
+
+<div class="tl-year"><span>2026</span></div>
+
+<div class="tl-item tl-left">
+<span class="tl-dot"></span>
+<p class="tl-date">May 2026</p>
+<figure class="rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="conf-slider" data-autoplay="4000">
+<img class="conf-slide active-slide" alt="MH2026 - Italy conference photo 1" src="https://drive.google.com/thumbnail?id=1wnd52NaXipxOYFh6i0a45qC3qrQnqkA1&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1wnd52NaXipxOYFh6i0a45qC3qrQnqkA1&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="MH2026 - Italy conference photo 2" src="https://drive.google.com/thumbnail?id=1XLMAWUpW4ZJPl_bi8Hsm-J1n6rSxsnTN&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1XLMAWUpW4ZJPl_bi8Hsm-J1n6rSxsnTN&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="MH2026 - Italy conference photo 3" src="https://drive.google.com/thumbnail?id=1D_S-RlCvcGoU5Xl5N-tWD2Hgj1twUw2l&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1D_S-RlCvcGoU5Xl5N-tWD2Hgj1twUw2l&sz=w2000" onclick="openLightbox(this)"/>
+<div class="conf-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+<div class="conf-arrow prev" onclick="confNav(this,-1)"><span class="material-symbols-outlined text-[16px]">chevron_left</span></div>
+<div class="conf-arrow next" onclick="confNav(this,1)"><span class="material-symbols-outlined text-[16px]">chevron_right</span></div>
+<div class="conf-dots">
+<span class="conf-dot active-dot" onclick="confGoTo(this,0)"></span>
+<span class="conf-dot" onclick="confGoTo(this,1)"></span>
+<span class="conf-dot" onclick="confGoTo(this,2)"></span>
+</div>
+<div class="conf-caption-overlay">
+<p class="font-body-sm text-body-sm font-bold conf-title-overlay">MH2026 - Italy</p>
+<p class="font-body-sm text-body-sm conf-text-overlay">During the presentation at Microfluidic Horizons 2026 (MH 2026), May 2026, Padua, Italy.</p>
+</div>
+</div>
+</figure>
+</div>
+
+<div class="tl-item tl-right">
+<span class="tl-dot"></span>
+<p class="tl-date">Apr 2026</p>
+<figure class="rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="conf-slider" data-autoplay="4000">
+<img class="conf-slide active-slide" alt="ANSYS Hackathon conference photo 1" src="https://drive.google.com/thumbnail?id=1LgjFtyjcbWIniH6HbBSBj5ytrm1DO5Pg&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1LgjFtyjcbWIniH6HbBSBj5ytrm1DO5Pg&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="ANSYS Hackathon conference photo 2" src="https://drive.google.com/thumbnail?id=1LEInC3DJAInFEE0AzkZYTp1qSpRXwbUC&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1LEInC3DJAInFEE0AzkZYTp1qSpRXwbUC&sz=w2000" onclick="openLightbox(this)"/>
+<div class="conf-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+<div class="conf-arrow prev" onclick="confNav(this,-1)"><span class="material-symbols-outlined text-[16px]">chevron_left</span></div>
+<div class="conf-arrow next" onclick="confNav(this,1)"><span class="material-symbols-outlined text-[16px]">chevron_right</span></div>
+<div class="conf-dots">
+<span class="conf-dot active-dot" onclick="confGoTo(this,0)"></span>
+<span class="conf-dot" onclick="confGoTo(this,1)"></span>
+</div>
+<div class="conf-caption-overlay">
+<p class="font-body-sm text-body-sm font-bold conf-title-overlay">ANSYS Hackathon</p>
+<p class="font-body-sm text-body-sm conf-text-overlay">Secured 1st runner-up in the ANSYS Student Hackathon at IIT Dharwad, April 2026.</p>
+</div>
+</div>
+</figure>
+</div>
+
+<div class="tl-year"><span>2025</span></div>
+
+<div class="tl-item tl-left">
+<span class="tl-dot"></span>
+<p class="tl-date">Dec 2025</p>
+<figure class="rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="conf-slider" data-autoplay="4000">
+<img class="conf-slide active-slide" alt="GPU-CFD workshop conference photo 1" src="https://drive.google.com/thumbnail?id=1Ljm-uuQr5R4qn8AR7gdG40V9tjqDR2td&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1Ljm-uuQr5R4qn8AR7gdG40V9tjqDR2td&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="GPU-CFD workshop conference photo 2" src="https://drive.google.com/thumbnail?id=13Z5cojq_CylxTMcDLH9TnqD2SwIF9B-F&sz=w1000" data-full="https://drive.google.com/thumbnail?id=13Z5cojq_CylxTMcDLH9TnqD2SwIF9B-F&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="GPU-CFD workshop conference photo 3" src="https://drive.google.com/thumbnail?id=1yQC2YewHhEdodjLbvfHfK3J9qJHRB1WC&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1yQC2YewHhEdodjLbvfHfK3J9qJHRB1WC&sz=w2000" onclick="openLightbox(this)"/>
+<div class="conf-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+<div class="conf-arrow prev" onclick="confNav(this,-1)"><span class="material-symbols-outlined text-[16px]">chevron_left</span></div>
+<div class="conf-arrow next" onclick="confNav(this,1)"><span class="material-symbols-outlined text-[16px]">chevron_right</span></div>
+<div class="conf-dots">
+<span class="conf-dot active-dot" onclick="confGoTo(this,0)"></span>
+<span class="conf-dot" onclick="confGoTo(this,1)"></span>
+<span class="conf-dot" onclick="confGoTo(this,2)"></span>
+</div>
+<div class="conf-caption-overlay">
+<p class="font-body-sm text-body-sm font-bold conf-title-overlay">GPU-CFD workshop</p>
+<p class="font-body-sm text-body-sm conf-text-overlay">Attended a one-week workshop on GPU-CFD at IIT Dharwad, December 2025.</p>
+</div>
+</div>
+</figure>
+</div>
+
+<div class="tl-item tl-right">
+<span class="tl-dot"></span>
+<p class="tl-date">Oct&ndash;Nov 2025</p>
+<figure class="rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="conf-slider" data-autoplay="4000">
+<img class="conf-slide active-slide" style="object-position: top;" alt="IIT-Guwahati conference photo 1" src="https://drive.google.com/thumbnail?id=1GiVNnnv3SUBH1TpwVbIMOsMz3xGmIIyo&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1GiVNnnv3SUBH1TpwVbIMOsMz3xGmIIyo&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="IIT-Guwahati conference photo 2" src="https://drive.google.com/thumbnail?id=1Qojp5r2uGgHEeCp89xvPkkz5bfIVjG12&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1Qojp5r2uGgHEeCp89xvPkkz5bfIVjG12&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="IIT-Guwahati conference photo 3" src="https://drive.google.com/thumbnail?id=15ZO2wxK1Kqa5g63wgsX_Fh4adceWCTUk&sz=w1000" data-full="https://drive.google.com/thumbnail?id=15ZO2wxK1Kqa5g63wgsX_Fh4adceWCTUk&sz=w2000" onclick="openLightbox(this)"/>
+<div class="conf-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+<div class="conf-arrow prev" onclick="confNav(this,-1)"><span class="material-symbols-outlined text-[16px]">chevron_left</span></div>
+<div class="conf-arrow next" onclick="confNav(this,1)"><span class="material-symbols-outlined text-[16px]">chevron_right</span></div>
+<div class="conf-dots">
+<span class="conf-dot active-dot" onclick="confGoTo(this,0)"></span>
+<span class="conf-dot" onclick="confGoTo(this,1)"></span>
+<span class="conf-dot" onclick="confGoTo(this,2)"></span>
+</div>
+<div class="conf-caption-overlay">
+<p class="font-body-sm text-body-sm font-bold conf-title-overlay">IIT-Guwahati</p>
+<p class="font-body-sm text-body-sm conf-text-overlay">Presented at 2nd International Conference on Micro Nano Fluidics (ICOM-2025), 31 October – 2 November 2025, IIT Guwahati, Assam, India.</p>
+</div>
+</div>
+</figure>
+</div>
+
+<div class="tl-item tl-left">
+<span class="tl-dot"></span>
+<p class="tl-date">Feb 2025</p>
+<figure class="rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="conf-slider" data-autoplay="4000">
+<img class="conf-slide active-slide" alt="Sparc - CFD conference photo 1" src="https://drive.google.com/thumbnail?id=15ez2mu9rNiRPCn60k1xDLhzOHlO_S7Ni&sz=w1000" data-full="https://drive.google.com/thumbnail?id=15ez2mu9rNiRPCn60k1xDLhzOHlO_S7Ni&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="Sparc - CFD conference photo 2" src="https://drive.google.com/thumbnail?id=1slQlzz57gCLBcEEulZEo6uMUyQG4Cy7C&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1slQlzz57gCLBcEEulZEo6uMUyQG4Cy7C&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="Sparc - CFD conference photo 3" src="https://drive.google.com/thumbnail?id=18dDxukZU8TS-4Oaai9E9nJ-3z_0yg6O8&sz=w1000" data-full="https://drive.google.com/thumbnail?id=18dDxukZU8TS-4Oaai9E9nJ-3z_0yg6O8&sz=w2000" onclick="openLightbox(this)"/>
+<div class="conf-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+<div class="conf-arrow prev" onclick="confNav(this,-1)"><span class="material-symbols-outlined text-[16px]">chevron_left</span></div>
+<div class="conf-arrow next" onclick="confNav(this,1)"><span class="material-symbols-outlined text-[16px]">chevron_right</span></div>
+<div class="conf-dots">
+<span class="conf-dot active-dot" onclick="confGoTo(this,0)"></span>
+<span class="conf-dot" onclick="confGoTo(this,1)"></span>
+<span class="conf-dot" onclick="confGoTo(this,2)"></span>
+</div>
+<div class="conf-caption-overlay">
+<p class="font-body-sm text-body-sm font-bold conf-title-overlay">Sparc - CFD</p>
+<p class="font-body-sm text-body-sm conf-text-overlay">During the workshop on SPARC – CFD and Multiphase flow at IIT Dharwad, February 2025.</p>
+</div>
+</div>
+</figure>
+</div>
+
+<div class="tl-year"><span>2024</span></div>
+
+<div class="tl-item tl-right">
+<span class="tl-dot"></span>
+<p class="tl-date">Dec 2024</p>
+<figure class="rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="conf-slider" data-autoplay="4000">
+<img class="conf-slide active-slide" alt="NIT - Jalandhar conference photo 1" src="https://drive.google.com/thumbnail?id=1RFcmrHDCqNayiKCUfKnybg4tNgWygzhX&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1RFcmrHDCqNayiKCUfKnybg4tNgWygzhX&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="NIT - Jalandhar conference photo 2" src="https://drive.google.com/thumbnail?id=1ZRBFiGCpiHSRoHn6bRCYHFK4XbqveZ5v&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1ZRBFiGCpiHSRoHn6bRCYHFK4XbqveZ5v&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="NIT - Jalandhar conference photo 3" src="https://drive.google.com/thumbnail?id=1AmA4tzChGtjGTI1LzHIKv6rnaBtn5fAJ&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1AmA4tzChGtjGTI1LzHIKv6rnaBtn5fAJ&sz=w2000" onclick="openLightbox(this)"/>
+<div class="conf-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+<div class="conf-arrow prev" onclick="confNav(this,-1)"><span class="material-symbols-outlined text-[16px]">chevron_left</span></div>
+<div class="conf-arrow next" onclick="confNav(this,1)"><span class="material-symbols-outlined text-[16px]">chevron_right</span></div>
+<div class="conf-dots">
+<span class="conf-dot active-dot" onclick="confGoTo(this,0)"></span>
+<span class="conf-dot" onclick="confGoTo(this,1)"></span>
+<span class="conf-dot" onclick="confGoTo(this,2)"></span>
+</div>
+<div class="conf-caption-overlay">
+<p class="font-body-sm text-body-sm font-bold conf-title-overlay">NIT - Jalandhar</p>
+<p class="font-body-sm text-body-sm conf-text-overlay">During the presentation of research work at IIChE-CHEMCON 2024, December 2024, NIT Jalandhar, Punjab, India.</p>
+</div>
+</div>
+</figure>
+</div>
+
+<div class="tl-item tl-left">
+<span class="tl-dot"></span>
+<p class="tl-date">Dec 2024</p>
+<figure class="rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="conf-slider" data-autoplay="4000">
+<img class="conf-slide active-slide" alt="IIT-Hyderabad conference photo 1" src="https://drive.google.com/thumbnail?id=1h9RHPlbx4rn7Ws2UiGBN9Bwo1tUm90h5&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1h9RHPlbx4rn7Ws2UiGBN9Bwo1tUm90h5&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="IIT-Hyderabad conference photo 2" src="https://drive.google.com/thumbnail?id=1GHGJ9menOTrsIm6hby9Ii16Q6WgRWxsT&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1GHGJ9menOTrsIm6hby9Ii16Q6WgRWxsT&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="IIT-Hyderabad conference photo 3" src="https://drive.google.com/thumbnail?id=1kqXMVH282ZgNeGBExdLW8hKCgSNEPQtV&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1kqXMVH282ZgNeGBExdLW8hKCgSNEPQtV&sz=w2000" onclick="openLightbox(this)"/>
+<div class="conf-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+<div class="conf-arrow prev" onclick="confNav(this,-1)"><span class="material-symbols-outlined text-[16px]">chevron_left</span></div>
+<div class="conf-arrow next" onclick="confNav(this,1)"><span class="material-symbols-outlined text-[16px]">chevron_right</span></div>
+<div class="conf-dots">
+<span class="conf-dot active-dot" onclick="confGoTo(this,0)"></span>
+<span class="conf-dot" onclick="confGoTo(this,1)"></span>
+<span class="conf-dot" onclick="confGoTo(this,2)"></span>
+</div>
+<div class="conf-caption-overlay">
+<p class="font-body-sm text-body-sm font-bold conf-title-overlay">IIT-Hyderabad</p>
+<p class="font-body-sm text-body-sm conf-text-overlay">Presented the work on Compound droplet dynamics in a constricted microchannel. CompFlu, December 2024, IIT Hyderabad, Telangana, India.</p>
+</div>
+</div>
+</figure>
+</div>
+
+<div class="tl-item tl-right">
+<span class="tl-dot"></span>
+<p class="tl-date">Jun 2024</p>
+<figure class="rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="conf-slider" data-autoplay="4000">
+<img class="conf-slide active-slide" alt="NIT-Calicut conference photo 1" src="https://drive.google.com/thumbnail?id=17_6azNmnangEJeMtaelhUjJjOkbdp8V-&sz=w1000" data-full="https://drive.google.com/thumbnail?id=17_6azNmnangEJeMtaelhUjJjOkbdp8V-&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="NIT-Calicut conference photo 2" src="https://drive.google.com/thumbnail?id=1ODqYraJ_gnErvA5FLLlgmGL9HohSNy3i&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1ODqYraJ_gnErvA5FLLlgmGL9HohSNy3i&sz=w2000" onclick="openLightbox(this)"/>
+<div class="conf-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+<div class="conf-arrow prev" onclick="confNav(this,-1)"><span class="material-symbols-outlined text-[16px]">chevron_left</span></div>
+<div class="conf-arrow next" onclick="confNav(this,1)"><span class="material-symbols-outlined text-[16px]">chevron_right</span></div>
+<div class="conf-dots">
+<span class="conf-dot active-dot" onclick="confGoTo(this,0)"></span>
+<span class="conf-dot" onclick="confGoTo(this,1)"></span>
+</div>
+<div class="conf-caption-overlay">
+<p class="font-body-sm text-body-sm font-bold conf-title-overlay">NIT-Calicut</p>
+<p class="font-body-sm text-body-sm conf-text-overlay">Presented work at ICFTES2024, June 2024, NIT Calicut, Kerala, India.</p>
+</div>
+</div>
+</figure>
+</div>
+
+<div class="tl-item tl-left">
+<span class="tl-dot"></span>
+<p class="tl-date">Feb 2024</p>
+<figure class="rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
+<div class="conf-slider" data-autoplay="4000">
+<img class="conf-slide active-slide" alt="IIPE - Vizag conference photo 1" src="https://drive.google.com/thumbnail?id=1caSShpq9Itsvu2fcnmObCvaUBh0UdqLU&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1caSShpq9Itsvu2fcnmObCvaUBh0UdqLU&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="IIPE - Vizag conference photo 2" src="https://drive.google.com/thumbnail?id=1oYJ4Pr4G50y5sDL-243ui64W6MzpJ-6K&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1oYJ4Pr4G50y5sDL-243ui64W6MzpJ-6K&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="IIPE - Vizag conference photo 3" src="https://drive.google.com/thumbnail?id=1ZiQH7YmO2bANdFEcPDjJbFrRTOFKJs6m&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1ZiQH7YmO2bANdFEcPDjJbFrRTOFKJs6m&sz=w2000" onclick="openLightbox(this)"/>
+<img class="conf-slide" alt="IIPE - Vizag conference photo 4" src="https://drive.google.com/thumbnail?id=1DJq9c-xEErVJaXxw3wodSet9L7y3pEil&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1DJq9c-xEErVJaXxw3wodSet9L7y3pEil&sz=w2000" onclick="openLightbox(this)"/>
+<div class="conf-zoom-icon"><span class="material-symbols-outlined">visibility</span></div>
+<div class="conf-arrow prev" onclick="confNav(this,-1)"><span class="material-symbols-outlined text-[16px]">chevron_left</span></div>
+<div class="conf-arrow next" onclick="confNav(this,1)"><span class="material-symbols-outlined text-[16px]">chevron_right</span></div>
+<div class="conf-dots">
+<span class="conf-dot active-dot" onclick="confGoTo(this,0)"></span>
+<span class="conf-dot" onclick="confGoTo(this,1)"></span>
+<span class="conf-dot" onclick="confGoTo(this,2)"></span>
+<span class="conf-dot" onclick="confGoTo(this,3)"></span>
+</div>
+<div class="conf-caption-overlay">
+<p class="font-body-sm text-body-sm font-bold conf-title-overlay">IIPE - Vizag</p>
+<p class="font-body-sm text-body-sm conf-text-overlay">Presented work at the 1st International Conference on Trends in Chemical, Energy and Environmental Engineering, February 2024, IIPE Visakhapatnam, Andhra Pradesh, India.</p>
+</div>
+</div>
+</figure>
+</div>
+
+<div class="tl-end"></div>
+</div>
+</div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE: Contact -->
+<!-- ============================================================ -->
+<section id="page-contact" class="page">
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-8 card-hover-effect grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Get in Touch</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">I'm always happy to discuss microfluidics, CFD, and multiphase flow research, or potential collaborations. Feel free to reach out.</p>
+<div class="flex flex-col gap-3">
+<a class="text-secondary hover:text-primary transition-colors flex items-center gap-2 font-body-md text-body-md" href="mailto:ch23dp001@iitdh.ac.in">
+<span class="material-symbols-outlined">mail</span> ch23dp001@iitdh.ac.in
+</a>
+<a class="text-secondary hover:text-primary transition-colors flex items-center gap-2 font-body-md text-body-md" href="https://www.linkedin.com/in/manohar-jammula-32a208115/" target="_blank">
+<span class="material-symbols-outlined">link</span> LinkedIn Profile
+</a>
+</div>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Lab Address</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<a class="text-secondary hover:text-[#e21c21] font-bold underline" href="https://mfmlab.iitdh.ac.in/" target="_blank" rel="noopener">Multiphase Flow &amp; Microfluidics (MFM) Laboratory</a><br/>
+Department of Chemical Engineering<br/>
+Indian Institute of Technology Dharwad<br/>
+Dharwad, Karnataka, India
+</p>
+<!-- EDIT: Google Map — to pin a more exact spot, change the
+     coordinates after "q=" in the map src below (lab pin: 15.4874658,
+     74.9355823), and the "Open in Google Maps" href. -->
+<div class="mt-5 border border-surface-variant shadow overflow-hidden">
+<iframe title="Map: IIT Dharwad" class="block w-full h-[260px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://maps.google.com/maps?q=15.4874658,74.9355823&z=17&output=embed"></iframe>
+</div>
+<a class="mt-3 inline-flex items-center gap-1 text-secondary hover:text-[#e21c21] font-body-sm text-body-sm font-bold" href="https://maps.app.goo.gl/Jkw7Q79XtDNLJsRf7" target="_blank" rel="noopener">
+<span class="material-symbols-outlined text-[18px]">location_on</span> Open in Google Maps
+</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="lab-footer full-width bottom-0 mt-12">
+<div class="max-w-[1200px] mx-auto py-10 px-gutter flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="font-['Oswald'] text-[22px] uppercase tracking-wide text-white">
+                Manohar Jammula
+            </div>
+<div class="flex gap-6 flex-wrap justify-center">
+<a class="font-body-sm text-body-sm transition-colors duration-200" href="https://www.linkedin.com/in/manohar-jammula-32a208115/" target="_blank">LinkedIn</a>
+<a class="font-body-sm text-body-sm transition-colors duration-200" href="https://scholar.google.com/citations?user=2wtMJpwAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
+<a class="font-body-sm text-body-sm transition-colors duration-200" href="https://mfmlab.iitdh.ac.in/" target="_blank">MFM Lab</a>
+<button class="font-body-sm text-body-sm transition-colors duration-200" onclick="showPage('contact')">Contact</button>
+</div>
+<div class="font-body-sm text-body-sm text-[#9fd3cd]">
+                © 2026 Manohar Jammula | IIT Dharwad
+            </div>
+</div>
+</footer>
+
+<script>
+    function showPage(pageId) {
+        // hide all pages, show the selected one
+        document.querySelectorAll('.page').forEach(function(p) {
+            p.classList.remove('active');
+        });
+        document.getElementById('page-' + pageId).classList.add('active');
+
+        // update active state on nav links (desktop + mobile)
+        document.querySelectorAll('.nav-link').forEach(function(link) {
+            link.classList.toggle('active-link', link.dataset.page === pageId);
+        });
+
+        // close mobile menu after choosing a page
+        document.getElementById('mobileNav').classList.remove('open');
+
+        // scroll to top of the new page
+        window.scrollTo({ top: 0, behavior: 'instant' });
+
+        // reflect the page in the URL hash so links/back button work
+        history.replaceState(null, '', '#' + pageId);
+
+        // whenever Gallery is opened, default back to the All sub-tab
+        if (pageId === 'gallery') {
+            showSubtab('all');
+        }
+    }
+
+    function showSubtab(subtabId) {
+        // "all" shows every sub-page together (see .show-all in the CSS)
+        document.getElementById('page-gallery').classList.toggle('show-all', subtabId === 'all');
+        document.querySelectorAll('.subpage').forEach(function(sp) {
+            sp.classList.remove('active');
+        });
+        if (subtabId !== 'all') {
+            document.getElementById('subpage-' + subtabId).classList.add('active');
+        }
+
+        document.querySelectorAll('.subtab-link').forEach(function(tab) {
+            tab.classList.toggle('active-subtab', tab.dataset.subtab === subtabId);
+        });
+    }
+
+    // On load, open whichever page is in the URL hash (or Home by default)
+    window.addEventListener('DOMContentLoaded', function() {
+        var initial = window.location.hash ? window.location.hash.substring(1) : 'home';
+        if (!document.getElementById('page-' + initial)) initial = 'home';
+        showPage(initial);
+    });
+
+    /* ---------------- Home banner / highlight carousel ----------------
+       EDIT: heroInterval controls the autoplay speed (milliseconds).
+       If you add/remove a .hero-slide (and its matching .hero-dot) above,
+       this code adapts automatically — no numbers to update here. */
+    (function() {
+        var heroSlides = document.querySelectorAll('#heroBanner .hero-slide');
+        var heroDots = document.querySelectorAll('#heroBanner .hero-dot');
+        var heroIndex = 0;
+        var heroTimer = null;
+        var heroIntervalMs = 5500;
+
+        function heroShow(i) {
+            heroIndex = (i + heroSlides.length) % heroSlides.length;
+            heroSlides.forEach(function(s, idx) { s.classList.toggle('active', idx === heroIndex); });
+            heroDots.forEach(function(d, idx) { d.classList.toggle('active-dot', idx === heroIndex); });
+        }
+
+        window.heroNav = function(delta) {
+            heroShow(heroIndex + delta);
+            heroRestart();
+        };
+        window.heroGoTo = function(i) {
+            heroShow(i);
+            heroRestart();
+        };
+        window.heroPause = function() { clearInterval(heroTimer); };
+        window.heroResume = function() { heroRestart(); };
+
+        function heroRestart() {
+            clearInterval(heroTimer);
+            heroTimer = setInterval(function() { heroShow(heroIndex + 1); }, heroIntervalMs);
+        }
+
+        if (heroSlides.length) {
+            heroShow(0);
+            heroRestart();
+        }
+    })();
+
+    /* ---------------- Gallery > Conferences — per-card sliders ----------------
+       EDIT: confIntervalMs controls the autoplay speed (milliseconds) for
+       every conference card. Add/remove slides directly in the HTML (see
+       the EDIT comment above the Conferences sub-page) — this code adapts
+       automatically. */
+    (function() {
+        var confIntervalMs = 4000;
+        var confTimers = new Map();
+
+        function confIndex(container) {
+            return parseInt(container.dataset.index || '0', 10);
+        }
+        function confShow(container, i) {
+            var slides = container.querySelectorAll('.conf-slide');
+            var dots = container.querySelectorAll('.conf-dot');
+            if (!slides.length) return;
+            i = (i + slides.length) % slides.length;
+            slides.forEach(function(s, idx) { s.classList.toggle('active-slide', idx === i); });
+            dots.forEach(function(d, idx) { d.classList.toggle('active-dot', idx === i); });
+            container.dataset.index = i;
+        }
+        function confRestart(container) {
+            if (confTimers.has(container)) clearInterval(confTimers.get(container));
+            var ms = parseInt(container.dataset.autoplay, 10) || confIntervalMs;
+            var t = setInterval(function() { confShow(container, confIndex(container) + 1); }, ms);
+            confTimers.set(container, t);
+        }
+
+        window.confNav = function(el, delta) {
+            var container = el.closest('.conf-slider');
+            confShow(container, confIndex(container) + delta);
+            confRestart(container);
+        };
+        window.confGoTo = function(el, i) {
+            var container = el.closest('.conf-slider');
+            confShow(container, i);
+            confRestart(container);
+        };
+
+        document.querySelectorAll('.conf-slider').forEach(function(container) {
+            confShow(container, 0);
+            confRestart(container);
+            container.addEventListener('mouseenter', function() { clearInterval(confTimers.get(container)); });
+            container.addEventListener('mouseleave', function() { confRestart(container); });
+        });
+    })();
+
+    /* ---------------- Home > Latest News — smooth rolling ticker ----------------
+       EDIT: newsSpeed is the rolling speed in pixels per second
+       (lower = slower). The list is doubled so it rolls upward in one
+       continuous, seamless loop. Hover pauses it. */
+    (function() {
+        var newsSpeed = 22;
+        var newsRow = 76;   // keep equal to --news-row in the CSS
+        var visibleRows = 5;
+        var ticker = document.getElementById('newsTicker');
+        if (!ticker) return;
+        var list = ticker.querySelector('.news-list');
+        var originals = Array.prototype.slice.call(list.children);
+
+        // full text on hover, since long items are trimmed to 2 lines
+        originals.forEach(function(li) {
+            li.title = li.textContent.replace(/\s+/g, ' ').trim();
+        });
+
+        if (originals.length <= visibleRows) return;
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        originals.forEach(function(li) {
+            var copy = li.cloneNode(true);
+            copy.setAttribute('aria-hidden', 'true');
+            list.appendChild(copy);
+        });
+        list.style.setProperty('--news-duration', (originals.length * newsRow / newsSpeed) + 's');
+        list.classList.add('rolling');
+    })();
+
+    /* ---------------- Publications > journal-cover strip ----------------
+       EDIT: coverSpeed is how fast the covers drift (pixels per second).
+       The covers listed once in .cover-set are repeated to fill the
+       screen, then the whole set is doubled so the loop has no gap. */
+    (function() {
+        var coverSpeed = 40;
+        var cardSpace = 208; // 180px card + 28px gap (see .cover-card / .cover-set CSS)
+        var marquee = document.getElementById('coverMarquee');
+        if (!marquee) return;
+        var track = marquee.querySelector('.cover-track');
+        var set = track.querySelector('.cover-set');
+        var originals = Array.prototype.slice.call(set.children);
+        if (!originals.length) return;
+
+        // the page may be hidden at load, so size from the screen, not the element
+        var needed = Math.ceil((Math.max(window.screen.width, window.innerWidth) * 1.2) / cardSpace);
+        while (set.children.length < needed) {
+            originals.forEach(function(card) { set.appendChild(card.cloneNode(true)); });
+        }
+        var copy = set.cloneNode(true);
+        copy.setAttribute('aria-hidden', 'true');
+        copy.querySelectorAll('a').forEach(function(a) { a.setAttribute('tabindex', '-1'); });
+        track.appendChild(copy);
+
+        track.style.setProperty('--cover-duration', (set.children.length * cardSpace / coverSpeed) + 's');
+    })();
+
+    /* ---------------- Click-to-enlarge image lightbox ---------------- */
+    window.addEventListener('DOMContentLoaded', function() {
+        var overlay = document.getElementById('lightboxOverlay');
+        var overlayImg = document.getElementById('lightboxImg');
+
+        window.openLightbox = function(imgEl) {
+            overlayImg.src = imgEl.dataset.full || imgEl.src;
+            overlayImg.alt = imgEl.alt || '';
+            overlay.classList.add('open');
+        };
+        window.closeLightbox = function() {
+            overlay.classList.remove('open');
+            overlayImg.src = '';
+        };
+
+        overlay.addEventListener('click', function(e) {
+            if (e.target === overlay) closeLightbox();
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    });
+</script>
+
+<!-- Click-to-enlarge lightbox — shows the full picture when a gallery
+     or conference image is clicked. Closes on the X, clicking outside
+     the image, or pressing Escape. -->
+<div id="lightboxOverlay" class="lightbox-overlay">
+<div class="lightbox-close" onclick="closeLightbox()"><span class="material-symbols-outlined">close</span></div>
+<img id="lightboxImg" alt=""/>
+</div>
+
+</body>
+</html>
