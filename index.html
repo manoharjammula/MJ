@@ -455,6 +455,54 @@
             border-radius: 9999px;
             background: #13807a;
         }
+        /* Award badge on a timeline card — petals + paper confetti fly out on both sides
+           EDIT: add <div class="award">…</div> (copy the Jun 2024 one) under any .tl-date */
+        .award { text-align: center; margin: 2px 0 14px; }
+        .award-wrap { position: relative; display: inline-block; }
+        .award-badge {
+            position: relative;
+            z-index: 1;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 18px;
+            border-radius: 9999px;
+            background: linear-gradient(135deg, #ffe27a 0%, #f2b705 55%, #d99a00 100%);
+            color: #4a3200;
+            font-family: 'Oswald', sans-serif;
+            font-size: 15px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            box-shadow: 0 2px 8px rgba(217, 154, 0, 0.45);
+            animation: award-glow 2.4s ease-in-out infinite;
+        }
+        .award-badge .material-symbols-outlined { font-size: 20px; }
+        .award-burst { position: absolute; top: 50%; width: 0; height: 0; pointer-events: none; }
+        .award-burst.left  { left: 10px; }
+        .award-burst.right { right: 10px; }
+        .award-burst i {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            font-style: normal;
+            line-height: 1;
+            animation: award-fly var(--t, 2.4s) ease-out var(--d, 0s) infinite;
+        }
+        .award-burst i.paper { width: 6px; height: 10px; margin: -5px 0 0 -3px; border-radius: 1px; background: var(--c); }
+        .award-burst i.petal { font-size: 14px; margin: -7px 0 0 -7px; }
+        @keyframes award-fly {
+            0%   { opacity: 0; transform: translate(0, 0) rotate(0deg) scale(0.4); }
+            12%  { opacity: 1; }
+            100% { opacity: 0; transform: translate(var(--x), var(--y)) rotate(var(--r)) scale(1); }
+        }
+        @keyframes award-glow {
+            0%, 100% { box-shadow: 0 2px 8px rgba(217, 154, 0, 0.45); }
+            50%      { box-shadow: 0 2px 16px rgba(217, 154, 0, 0.8); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .award-badge, .award-burst i { animation: none; }
+        }
         @media (max-width: 767px) {
             .timeline::before { left: 9px; transform: none; }
             .tl-year { text-align: left; }
@@ -1189,8 +1237,11 @@ National Symposium 2026 — Dec 3–4, IIT Dharwad
 
 <div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-6 card-hover-effect">
 <span class="material-symbols-outlined text-primary text-[32px] mb-3 block">insights</span>
-<h3 class="font-body-md text-body-md font-bold text-on-surface mb-2">Data-Driven &amp; ML-Assisted Modelling</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Response-surface and physics-informed neural network (PINN) models built on parametric CFD datasets to predict droplet size, shell thickness, and formation frequency.</p>
+<h3 class="font-body-md text-body-md font-bold text-on-surface mb-3">Data-Driven &amp; ML-Assisted Modelling</h3>
+<div class="research-media mb-3">
+<img src="https://drive.google.com/thumbnail?id=1GP8tFUXo2aJMDqxPjbk46NJjMBTFWM3H&sz=w1000" data-full="https://drive.google.com/thumbnail?id=1GP8tFUXo2aJMDqxPjbk46NJjMBTFWM3H&sz=w1000" alt="Parametric CFD data feeding response-surface and PINN models that predict droplet and process performance" loading="lazy" onclick="openLightbox(this)"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Response-surface and physics-informed neural network (PINN) models built on parametric CFD datasets to predict droplet size, shell thickness, formation frequency, mixing efficiency, conversion, and mass transfer.</p>
 </div>
 
 </div>
@@ -1672,6 +1723,29 @@ National Symposium 2026 — Dec 3–4, IIT Dharwad
 <div class="tl-item tl-right">
 <span class="tl-dot"></span>
 <p class="tl-date">Jun 2024</p>
+<div class="award">
+<span class="award-wrap">
+<span class="award-burst left" aria-hidden="true">
+<i class="paper" style="--c:#e21c21; --x:-70px; --y:-34px; --r:-260deg; --d:0s"></i>
+<i class="petal" style="--x:-86px; --y:4px; --r:-180deg; --d:0.35s">🌸</i>
+<i class="paper" style="--c:#13807a; --x:-58px; --y:30px; --r:-320deg; --d:0.7s"></i>
+<i class="paper" style="--c:#f2b705; --x:-96px; --y:-16px; --r:-220deg; --d:1.05s"></i>
+<i class="petal" style="--x:-64px; --y:-44px; --r:-140deg; --d:1.4s">🌼</i>
+<i class="paper" style="--c:#3b82f6; --x:-80px; --y:22px; --r:-300deg; --d:1.75s"></i>
+<i class="petal" style="--x:-100px; --y:12px; --r:-200deg; --d:2.1s">🌸</i>
+</span>
+<span class="award-badge"><span class="material-symbols-outlined">emoji_events</span>Best Presentation Award</span>
+<span class="award-burst right" aria-hidden="true">
+<i class="paper" style="--c:#13807a; --x:70px; --y:-34px; --r:260deg; --d:0.2s"></i>
+<i class="petal" style="--x:86px; --y:4px; --r:180deg; --d:0.55s">🌼</i>
+<i class="paper" style="--c:#e21c21; --x:58px; --y:30px; --r:320deg; --d:0.9s"></i>
+<i class="paper" style="--c:#3b82f6; --x:96px; --y:-16px; --r:220deg; --d:1.25s"></i>
+<i class="petal" style="--x:64px; --y:-44px; --r:140deg; --d:1.6s">🌸</i>
+<i class="paper" style="--c:#f2b705; --x:80px; --y:22px; --r:300deg; --d:1.95s"></i>
+<i class="petal" style="--x:100px; --y:12px; --r:200deg; --d:2.3s">🌼</i>
+</span>
+</span>
+</div>
 <figure class="rounded-xl border border-surface-variant overflow-hidden card-hover-effect">
 <div class="conf-slider" data-autoplay="4000">
 <img class="conf-slide active-slide" alt="NIT-Calicut conference photo 1" src="https://drive.google.com/thumbnail?id=17_6azNmnangEJeMtaelhUjJjOkbdp8V-&sz=w1000" data-full="https://drive.google.com/thumbnail?id=17_6azNmnangEJeMtaelhUjJjOkbdp8V-&sz=w2000" onclick="openLightbox(this)"/>
